@@ -1,0 +1,39 @@
+#help_area{
+    height: 100%;
+}
+#support-header{
+    margin-bottom: 10px;
+}
+#support-header h2{
+    font-size: 30px;
+    padding-top: 15px;
+
+}
+#support-form{
+    margin-top: 20px;
+}
+#support-form input[type="radio"]{
+    display:inline;    
+}
+#support-form label,input{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#support-form h3{
+    font-size: 25px;
+    margin-top: 15px ;
+    margin-bottom: 15px;
+}
+#support-form #feedback{
+    width: 100%;
+    height: 100px;
+    border-radius: 6px;
+}
+#support-form input{
+    margin-left: 15px;
+}
+#help-button{
+    border-radius: 9px;
+    height: 45px;
+    width: 90px;
+}

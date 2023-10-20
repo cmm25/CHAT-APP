@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="help.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla&family=Lato&display=swap" rel="stylesheet">
+        <title>Document</title>
+    </head>
+    <body>
+        <main>
+            <nav>
+                <ul id="sidebar">
+                    <li class="list">
+                        <input type="radio" name="sidebar" id="first" >
+                         <a href="">
+                             <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                             </span>
+                             <label for="first" class="title">Home</label>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <input type="radio" name="sidebar" id="second" clicked>
+                         <a href="notices.html">
+                             <span class="icon">
+                                <ion-icon name="clipboard"></ion-icon>
+                             </span>
+                             <label for="first" class="title">Noticeboard</label>
+                        </a>
+                    </li>
+                    <li class="list ">
+                        <input type="radio" name="sidebar" id="third" clicked>
+                        <a href="groups.html">
+                            <span class="icon">
+                                <ion-icon name="people-outline"></ion-icon>
+                            </span>
+                            <label for="second" class="title">Groups</label>
+                       </a>
+                   </li>
+                   <li class="list">
+                    <input type="radio" name="sidebar" id="fourth">
+                        <a href="chats.html">
+                            <span class="icon">
+                                <ion-icon name="chatbox-outline"></ion-icon>
+                            </span>
+                            <label for="third" class="title">Chats</label>
+                         </a>
+                   </li>
+                   
+                    <li class="list ">
+                        <input type="radio" name="sidebar" id="fifth">
+                        <a href="">
+                            <span class="icon">
+                                <ion-icon name="settings-outline"></ion-icon>        
+                            </span>
+                            <label for="fourth" class="title">Settings</label>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <input type="radio" name="sidebar" id="sixth" checked>
+                        <a href="">
+                            <span class="icon">
+                                <ion-icon name="help-outline"></ion-icon>
+                            </span>
+                            <label for="fifth" class="title">Help</label>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <input type="radio" name="sidebar" id="seventh">
+                        <a href="">
+                            <span class="icon"><ion-icon name="exit-outline"></ion-icon></span>
+                            <label for="sixth" class="title">Log Out</label>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <section id="help_area">
+                <div id="support-header">
+                    <h2>Contact Support.</h2>
+                </div>
+                <form action="" id="support-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="admission" >Admission:</label>
+                    <input type="text" id="admission" name="admission" required><br>
+                    <label for="department"> Department:</label>
+                    <input type="text" name="department" id="department">
+                    <h3>Please select one of the following options:</h3>
+                    <input type="radio" name="option" id="suggestion" value="suggestion">
+                    <label for="suggestion">Suggestion</label>  <br>
+                    <input type="radio" name="option" id="issue" value="issue">
+                    <label for="issue">Issue</label>  <br>
+                    <label for="feedback">Kindly share your feedback:</label><br><br>
+                    <textarea  id="feedback" cols="30" rows="10" required></textarea><br><br>
+                    <input type="submit" value="Submit" id="help-button">
+                </form>
+            </section>
+
+        </main>
+    </body>
+</html>

@@ -129,7 +129,6 @@ section{
     margin-left: 80px;
     margin-bottom: 15px;
     height: 70px;
-    
     justify-content: center;
 }
 #text button{
@@ -157,4 +156,7 @@ section{
 }
 #upload{
     font-size: 2em;
+}
+#chat-groups{
+    height:100%;
 }
