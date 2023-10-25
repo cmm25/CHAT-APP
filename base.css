@@ -1,162 +1,153 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
 }
-html,body{
-    height: 100%;
-    scroll-behavior: smooth;
+html,
+body {
+	height: 100%;
+	scroll-behavior: smooth;
 }
-main{
-    display: flex;
-    flex-direction: column;
+main {
+	display: flex;
+	flex-direction: column;
 }
-nav{
-    position: fixed;
-    width: 240px;
-    height: 100%;
-    box-sizing: initial;
-    background-color: rgb(47,86,99);
-    transition: width 0.5s;
-
-}
-
-nav ul{
-    top:0;
-    left: 0;
-    width:100%;
-    padding-left: 5px ;
-    padding-top: 60px;
-    
+nav {
+	position: fixed;
+	width: 240px;
+	height: 100%;
+	box-sizing: initial;
+	background-color: #2f5663;
+	transition: width 0.5s;
 }
 
-.list{
-    position: relative;
-    list-style: none;
-    width:100%;
-    cursor: pointer;
+nav ul {
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-left: 5px;
+	padding-top: 60px;
 }
 
-
-nav ul li a{
-    position:relative;
-    display: block;
-    width: 100%;
-    display:flex;
-    color:white;
-    text-decoration: none;   
-}
-nav ul li a .icon{
-    position:relative;
-    display: block;
-    min-width: 60px;
-    height:60px;
-    line-height: 70px;   
-    text-align: center;
+.list {
+	position: relative;
+	list-style: none;
+	width: 100%;
+	cursor: pointer;
 }
 
-
-nav ul li a .icon ion-icon{
-    font-size: 1.5em;
+nav ul li a {
+	position: relative;
+	display: block;
+	width: 100%;
+	display: flex;
+	color: white;
+	text-decoration: none;
+}
+nav ul li a .icon {
+	position: relative;
+	display: block;
+	min-width: 60px;
+	height: 60px;
+	line-height: 70px;
+	text-align: center;
 }
 
-nav ul li a .title{
-   position: relative ;
-   display:block;
-   padding-left: 10px;
-   height: 60px;
-   line-height: 60px;
+nav ul li a .icon ion-icon {
+	font-size: 1.5em;
 }
 
-input[type="radio"]{
-    display:none;    
-}
-li.list input[type="radio"]:checked + a{
-    background-color: white;
-    color:black;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
-    font-weight: bolder;
-}
-section{
-    margin-left: 270px;
-    height: 100%;
-    width: 77%;
-
-}
-#chats{
-   background-color: white;
-   height:100%;
-   display: flex;
-   flex-direction: column;
-   
-}
-#messages{
-    width:inherit;
-    height:900px;
-    flex:1 0 auto;
-    
+nav ul li a .title {
+	position: relative;
+	display: block;
+	padding-left: 10px;
+	height: 60px;
+	line-height: 60px;
 }
 
+input[type='radio'] {
+	display: none;
+}
+li.list input[type='radio']:checked + a {
+	background-color: white;
+	color: black;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+	font-weight: bolder;
+}
+section {
+	margin-left: 270px;
+	height: 100%;
+	width: 77%;
+}
+#chats {
+	background-color: white;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#messages {
+	width: inherit;
+	height: 900px;
+	flex: 1 0 auto;
+}
 
-#respondent{
-    width:inherit;
-    height:60px;
-    display: flex;
-    position: fixed;
-    align-items: center;
-  
-    box-shadow: 0px  2px  rgba(0, 0,0,0.1);
-}
-#respondent  h4{
-    position: absolute;
-    color:black;
-    font-size: larger;
-    font-weight: bold; 
-    width:fit-content;
-    height: 30px;
-    width:120px;
-    padding-top: 5px;
-    margin-left: 60px;
-}
-#user{
-    font-size: 2.5em;
-}
-#text{
-    display: flex;
-    flex-direction: column;
-    margin-left: 80px;
-    margin-bottom: 15px;
-    height: 70px;
-    justify-content: center;
-}
-#text button{
-    background-color: #d8b188;
-    border: none;
-    height: 25px;
-    width:50px;
-    position: absolute;
-    margin-left: 20px;
-    margin-top: 10px;
-    border-radius: 7px;
+#respondent {
+	width: inherit;
+	height: 60px;
+	display: flex;
+	position: fixed;
+	align-items: center;
 
+	box-shadow: 0px 2px rgba(0, 0, 0, 0.1);
 }
-#text textarea{
-    font-family: 'Lato', sans-serif;
-    margin-left: 60px;
-    width:70%;
-    border-radius: 12px;
-    height: 40px;
-    padding:10px;
-    
+#respondent h4 {
+	position: absolute;
+	color: black;
+	font-size: larger;
+	font-weight: bold;
+	width: fit-content;
+	height: 30px;
+	width: 120px;
+	padding-top: 5px;
+	margin-left: 60px;
 }
-#send{
-    position: absolute;
+#user {
+	font-size: 2.5em;
 }
-#upload{
-    font-size: 2em;
+#text {
+	display: flex;
+	flex-direction: column;
+	margin-left: 80px;
+	margin-bottom: 15px;
+	height: 70px;
+	justify-content: center;
 }
-#chat-groups{
-    height:100%;
+#text button {
+	background-color: #d8b188;
+	border: none;
+	height: 25px;
+	width: 50px;
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 10px;
+	border-radius: 7px;
+}
+#text textarea {
+	font-family: 'Lato', sans-serif;
+	margin-left: 60px;
+	width: 70%;
+	border-radius: 12px;
+	height: 40px;
+	padding: 10px;
+}
+#send {
+	position: absolute;
+}
+#upload {
+	font-size: 2em;
+}
+#chat-groups {
+	height: 100%;
 }
